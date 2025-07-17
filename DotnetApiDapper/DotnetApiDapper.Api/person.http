@@ -3,7 +3,7 @@
 GET {{base_address}}
 
 ###
-GET {{base_address}}/1
+GET {{base_address}}/4
 
 ###
 POST {{base_address}}
@@ -13,3 +13,16 @@ Content-Type : application/json
   "firstName":"Mike",
   "lastName":"Clark"
 }
+
+###
+PUT {{base_address}}/4
+Content-Type : application/json
+
+{
+  "id": 4,
+  "firstName":"Mike1",
+  "lastName":"Clark1"
+}
+
+###
+DELETE {{base_address}}/4
